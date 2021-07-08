@@ -15,8 +15,3 @@
 
 # Add a feed source
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-
-cd lede/package/lean  
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
-make menuconfig #choose LUCI->Theme->Luci-theme-argon  
